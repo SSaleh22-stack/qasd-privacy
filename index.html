@@ -27,13 +27,14 @@
 
 <section id="ar" dir="rtl" lang="ar">
   <h1>سياسة الخصوصية لتطبيق قصد</h1>
-  <p class="meta">آخر تحديث: ١٢ نوفمبر ٢٠٢٦</p>
+  <p class="meta">آخر تحديث: ١٤ نوفمبر ٢٠٢٦</p>
 
-  <p>قصد تطبيق لتتبّع المصروفات الشخصية. يقرأ رسائل البنوك التي تصلك ليحوّلها إلى قائمة مصروفات وتقارير وميزانيات. صُمّم التطبيق ليعمل كاملًا على جهازك: <strong>لا نجمع أي بيانات عنك، ولا تغادر بياناتك جهازك، ولا نملك خوادم تستقبلها.</strong></p>
+  <p>قصد تطبيق لتتبّع المصروفات الشخصية. يقرأ رسائل البنوك التي تصلك ليحوّلها إلى قائمة مصروفات وتقارير وميزانيات. صُمّم التطبيق ليعمل كاملًا على جهازك: <strong>لا نجمع أي بيانات عنك، ولا تغادر بياناتك جهازك</strong>، إلا ما تختار مشاركته بنفسك في «رحلة مشتركة» مع أصدقائك (انظر «الرحلات المشتركة» أدناه).</p>
 
   <h2>البيانات التي يقرؤها التطبيق</h2>
   <ul>
-    <li><strong>إشعارات تطبيقات البنوك والمحافظ ورسائل البنوك النصية (أندرويد):</strong> إذا منحت التطبيق صلاحية «الوصول إلى الإشعارات»، فإنه يطّلع على الإشعارات عند وصولها. يحتفظ فقط بالإشعارات الصادرة من تطبيقات البنوك والمحافظ السعودية، ورسائل البنوك النصية التي يعرضها تطبيق الرسائل. أي إشعار آخر يُتجاهل فورًا في ذاكرة الجهاز ولا يُحفظ في أي مكان. ولا يحتفظ التطبيق برموز التحقق ولا برسائل جهات الاتصال المحفوظة أو المحادثات الجماعية.</li>
+    <li><strong>إشعارات تطبيقات البنوك والمحافظ ورسائل البنوك النصية (أندرويد):</strong> إذا منحت التطبيق صلاحية «الوصول إلى الإشعارات»، فإنه يطّلع على الإشعارات عند وصولها. يحتفظ فقط بالإشعارات الصادرة من تطبيقات البنوك والمحافظ السعودية التي تختار متابعتها (كلها إن لم تختر)، ورسائل هذه البنوك النصية التي يعرضها تطبيق الرسائل. أي إشعار آخر يُتجاهل فورًا في ذاكرة الجهاز ولا يُحفظ في أي مكان. ولا يحتفظ التطبيق برموز التحقق ولا برسائل جهات الاتصال المحفوظة أو المحادثات الجماعية.</li>
+    <li><strong>رسائل البنوك السابقة في صندوق الرسائل (أندرويد، اختياري):</strong> إذا اخترت «استيراد عمليات آخر ٦٠ يومًا» ومنحت إذن «الرسائل القصيرة» (READ_SMS)، يقرأ التطبيق من صندوق الرسائل على جهازك رسائل البنوك التي تتابعها فقط، من آخر ٦٠ يومًا فقط. يتعرّف على رسالة البنك من اسم المرسِل قبل فتحها، فلا يفتح رسائلك الشخصية ولا أي رسالة من غير بنك، ويتجاهل رموز التحقق. يحدث ذلك فقط حين تطلبه أنت، بعد شاشة توضّح ما سيُقرأ، وعلى جهازك فقط، ولا يُرسَل شيء منها إلى أي مكان. تمرّ الرسائل المستوردة بالخطوات نفسها التي تمرّ بها الرسائل الملتقطة، ولا يُحفظ نص إلا ما يصبح منها عملية. هذه الميزة لا تتوفر في كل نسخ التطبيق.</li>
     <li><strong>النص الذي تلصقه بنفسك:</strong> عندما تلصق رسالة بنكية في التطبيق، يقرأ النص الملصق فقط.</li>
     <li><strong>ما تُدخله يدويًا:</strong> الحسابات والتصنيفات والميزانيات والملاحظات والإعدادات.</li>
   </ul>
@@ -42,23 +43,33 @@
   <h2>أين تُحفظ البيانات</h2>
   <ul>
     <li>تُحفظ كل البيانات على جهازك فقط، في قاعدة بيانات مشفّرة (SQLCipher)، ومفتاح التشفير محفوظ في المخزن الآمن للنظام.</li>
-    <li>الرسائل التي تصل والتطبيق مغلق تنتظر في قائمة صغيرة مشفّرة داخل مساحة التطبيق الخاصة، وتُحذف بعد إدخالها، ولا تبقى أكثر من ١٤ يومًا، ولا تُدرج في النسخ الاحتياطي.</li>
-    <li>يحتفظ التطبيق بنص الرسائل الأصلي مدة تختارها من الإعدادات (سنة افتراضيًا) ثم يحذفه. وأنواع العمليات التي توقفها لا يُحفظ منها إلا بصمة رقمية لمنع التكرار.</li>
+    <li>الرسائل التي تصل والتطبيق مغلق تنتظر في قائمة صغيرة مشفّرة داخل مساحة التطبيق الخاصة، وتُحذف بعد إدخالها، ولا تبقى أكثر من ١٤ يومًا، ولا تُدرج في النسخ الاحتياطي ولا في نقل البيانات إلى هاتف جديد. وكذلك قائمة البنوك والمرسِلين التي يتابعها التطبيق.</li>
+    <li>يحتفظ التطبيق بنص الرسائل الأصلي مدة تختارها من الإعدادات (سنة افتراضيًا) ثم يحذفه. وأنواع العمليات والبطاقات التي توقف تتبّعها لا يُحفظ من رسائلها إلا بصمة رقمية لمنع التكرار.</li>
+    <li>سجل «نشاط الالتقاط» (أندرويد) يبقى على جهازك فقط وخارج النسخ الاحتياطي، ويذكر إشعارات بنوكك فقط: آخر ١٠٠ حدث لمدة ٧ أيام كحد أقصى، بوقت الإشعار، والتطبيق الذي أرسله، وسبب قبوله أو تجاهله، واسم المرسِل فقط حين يكون مرسِلًا بنكيًا. أما إشعارات تطبيق الرسائل التي ليست من بنوكك (رسائل جهات الاتصال وغيرها) فلا تُسجَّل أبدًا: يُعدّ فقط عددها وسبب تجاهلها في ذاكرة الجهاز، دون وقت ولا مرسِل، ويزول العدد حين يُغلق التطبيق. لا يحفظ السجل نص أي رسالة ولا مبالغ ولا أسماء متاجر. ويساعدك على معرفة سبب عدم وصول رسالة.</li>
   </ul>
 
   <h2>المشاركة مع أطراف أخرى</h2>
-  <p>لا نبيع بياناتك ولا نشاركها مع أحد. لا يحتوي التطبيق على إعلانات ولا أدوات تحليل ولا تتبّع، ولا يرسل أي بيانات عبر الإنترنت. البيانات لا تخرج من جهازك إلا إذا صدّرتها أنت بنفسك إلى ملف CSV وشاركته عبر نافذة المشاركة في جهازك، وعندها تصل إلى الجهة التي تختارها أنت.</p>
+  <p>لا نبيع بياناتك ولا نشاركها مع أحد. لا يحتوي التطبيق على إعلانات ولا أدوات تحليل ولا تتبّع، ولا يرسل أي بيانات عبر الإنترنت إلا عمليات الرحلات المشتركة التي تختارها أنت. البيانات لا تخرج من جهازك إلا في هذه الحالة، أو إذا صدّرتها أنت بنفسك إلى ملف CSV وشاركته عبر نافذة المشاركة في جهازك، وعندها تصل إلى الجهة التي تختارها أنت.</p>
+
+  <h2>الرحلات المشتركة (اختيارية)</h2>
+  <p>إذا أنشأت رحلة مشتركة أو انضممت إليها، يُرسل التطبيق إلى خادم الرحلات (Cloudflare، وقاعدة بيانات Neon) ما يلزم لعرض الرحلة لأعضائها فقط:</p>
+  <ul>
+    <li>اسم الرحلة وميزانيتها وتواريخها، والاسم الذي تكتبه لنفسك فيها.</li>
+    <li>لكل عملية في الرحلة: المبلغ والوقت واسم التاجر والفئة. تدخل العملية الرحلة فقط إذا ربطتَ بطاقتها بالرحلة وكانت ضمن تواريخها، أو أضفتها أو نقلتها إليها بنفسك.</li>
+  </ul>
+  <p>لا يُرسل نص رسائل البنك ولا أرقام البطاقات ولا اسم البنك ولا ملاحظاتك ولا أي عملية أخرى. لا حاجة لحساب أو بريد إلكتروني: يحصل هاتفك على رمز مجهول عشوائي يُحفظ في التخزين الآمن للنظام. لا يرى الرحلة إلا أعضاؤها، ولا ينضم إليها أحد إلا برمز الدعوة الذي يشاركه المسؤول. عند مغادرة الرحلة أو حذفها تعود عمليات بطاقاتك إلى مصروفك الشخصي، ويحذف المسؤول الرحلة وكل مدفوعاتها من الخادم بحذف الرحلة.</p>
 
   <h2>الصلاحيات</h2>
   <ul>
     <li><strong>الوصول إلى الإشعارات (أندرويد):</strong> لالتقاط رسائل البنوك تلقائيًا. اختيارية، ويمكنك سحبها في أي وقت من إعدادات الجهاز.</li>
+    <li><strong>الرسائل القصيرة READ_SMS (أندرويد):</strong> لاستيراد رسائل البنوك من آخر ٦٠ يومًا فقط، كما هو موضّح أعلاه. اختيارية، تُطلب فقط عندما تختار الاستيراد، ويمكنك رفضها والاستمرار باللصق، أو سحبها في أي وقت من إعدادات التطبيق في جهازك. لا يستخدمها التطبيق لإرسال الرسائل ولا لاستقبالها.</li>
     <li><strong>الإشعارات:</strong> لملخّص اليوم وتنبيهات الميزانية، وهي تُنشأ على جهازك.</li>
     <li><strong>البصمة أو بصمة الوجه:</strong> لقفل التطبيق. يتحقق منها النظام، ولا يصل التطبيق إلى بياناتها الحيوية.</li>
     <li><strong>الحافظة:</strong> تُقرأ فقط عندما تضغط على زر اللصق.</li>
   </ul>
 
   <h2>التحكم في بياناتك وحذفها</h2>
-  <p>يمكنك حذف كل بياناتك في أي وقت من «الإعدادات ← حذف كل البيانات». يحذف ذلك قاعدة البيانات وقائمة الرسائل المنتظرة ومفاتيح تشفيرها. وحذف التطبيق من جهازك يحذف كل بياناته أيضًا. لأننا لا نحتفظ بأي نسخة من بياناتك، لا نستطيع استعادتها بعد حذفها.</p>
+  <p>يمكنك حذف كل بياناتك في أي وقت من «الإعدادات ← حذف كل البيانات». يحذف ذلك قاعدة البيانات وقائمة الرسائل المنتظرة ومفاتيح تشفيرها وقائمة البنوك المتابَعة وسجل نشاط الالتقاط ورمز الرحلات المجهول في هاتفك. لحذف رحلة مشتركة من الخادم احذفها من داخل الرحلة إن كنت مسؤولها قبل ذلك. وحذف التطبيق من جهازك يحذف كل بياناته أيضًا. لأننا لا نحتفظ بأي نسخة من بياناتك، لا نستطيع استعادتها بعد حذفها.</p>
 
   <h2>الأطفال</h2>
   <p>التطبيق غير موجّه للأطفال دون ١٣ عامًا.</p>
@@ -72,13 +83,14 @@
 
 <section id="en" dir="ltr" lang="en">
   <h1>Qasd Privacy Policy</h1>
-  <p class="meta">Last updated: 12 November 2026</p>
+  <p class="meta">Last updated: 14 November 2026</p>
 
-  <p>Qasd is a personal spending tracker. It reads the bank messages you receive and turns them into a list of expenses, reports and budgets. The app is built to work entirely on your phone: <strong>we do not collect any data about you, your data never leaves your device, and we have no servers that receive it.</strong></p>
+  <p>Qasd is a personal spending tracker. It reads the bank messages you receive and turns them into a list of expenses, reports and budgets. The app is built to work entirely on your phone: <strong>we do not collect any data about you, and your data never leaves your device</strong>, except what you choose to share yourself in a shared trip with friends (see "Shared trips" below).</p>
 
   <h2>What the app reads</h2>
   <ul>
-    <li><strong>Notifications from bank and wallet apps, and bank text messages (Android):</strong> if you grant Qasd "Notification access", it looks at notifications as they arrive. It keeps only notifications from Saudi bank and wallet apps, and bank text messages shown by your messages app. Every other notification is discarded in memory straight away and never saved anywhere. Qasd also skips one-time verification codes, messages from your saved contacts, and group conversations.</li>
+    <li><strong>Notifications from bank and wallet apps, and bank text messages (Android):</strong> if you grant Qasd "Notification access", it looks at notifications as they arrive. It keeps only notifications from the Saudi bank and wallet apps you choose to track (all of them if you choose none), and those banks' text messages shown by your messages app. Every other notification is discarded in memory straight away and never saved anywhere. Qasd also skips one-time verification codes, messages from your saved contacts, and group conversations.</li>
+    <li><strong>Earlier bank messages in your SMS inbox (Android, optional):</strong> if you choose "Import last 60 days" and grant the SMS permission (READ_SMS), Qasd reads from the SMS inbox on your phone only the messages of the banks you track, and only from the last 60 days. It recognises a bank message by its sender name before opening it, so it never opens your personal messages or any message that is not from a bank, and it skips one-time verification codes. This happens only when you ask for it, after a screen that explains what will be read, and only on your phone; nothing from it is sent anywhere. Imported messages go through the same steps as captured ones, and only those that become transactions keep their text. This feature is not available in every version of the app.</li>
     <li><strong>Text you paste yourself:</strong> when you paste a bank message into the app, it reads only that pasted text.</li>
     <li><strong>What you enter:</strong> accounts, categories, budgets, notes and settings.</li>
   </ul>
@@ -87,23 +99,33 @@
   <h2>Where your data is stored</h2>
   <ul>
     <li>All data stays on your device only, in an encrypted database (SQLCipher). The encryption key is kept in the system's secure storage.</li>
-    <li>Messages that arrive while the app is closed wait in a small encrypted queue in the app's private storage. They are deleted once added, are never kept longer than 14 days, and are excluded from backups.</li>
-    <li>The original message text is kept for the period you choose in Settings (one year by default) and then deleted. For transaction types you switch off, only a fingerprint (hash) is kept to prevent duplicates.</li>
+    <li>Messages that arrive while the app is closed wait in a small encrypted queue in the app's private storage. They are deleted once added, are never kept longer than 14 days, and are excluded from backups and from transfers to a new phone. So is the list of banks and senders the app watches.</li>
+    <li>The original message text is kept for the period you choose in Settings (one year by default) and then deleted. For transaction types and cards you switch off, only a fingerprint (hash) of their messages is kept to prevent duplicates.</li>
+    <li>The "Capture activity" log (Android) stays on your device only and out of backups, and lists your banks' notifications only: at most the last 100 events for up to 7 days, with when the notification arrived, which app posted it, and why it was kept or skipped, plus the sender name only when it is a bank sender. Notifications from your messages app that are not from your banks (messages from your contacts and others) are never logged: only how many were skipped and why is counted in the phone's memory, with no time and no sender, and the count is gone when the app closes. The log never keeps message text, amounts or merchant names. It helps you find out why a message did not arrive.</li>
   </ul>
 
   <h2>Sharing with others</h2>
-  <p>We do not sell or share your data with anyone. The app contains no ads, no analytics and no tracking, and it sends no data over the internet. Your data only leaves your device if you export it yourself to a CSV file and share it through your phone's share sheet; it then goes only where you choose.</p>
+  <p>We do not sell or share your data with anyone. The app contains no ads, no analytics and no tracking, and it sends no data over the internet except the shared-trip payments you choose. Apart from those, your data only leaves your device if you export it yourself to a CSV file and share it through your phone's share sheet; it then goes only where you choose.</p>
+
+  <h2>Shared trips (optional)</h2>
+  <p>If you create or join a shared trip, the app sends to the trip server (Cloudflare, with a Neon database) only what is needed to show the trip to its members:</p>
+  <ul>
+    <li>The trip's name, budget and dates, and the name you give yourself in it.</li>
+    <li>For each trip payment: the amount, time, merchant name and category. A payment joins a trip only if you linked its card to the trip and it falls within the trip's dates, or if you added or moved it there yourself.</li>
+  </ul>
+  <p>Bank message text, card numbers, bank names, your notes and any other transaction are never sent. No account or email is needed: your phone gets a random anonymous token, kept in the system's secure storage. Only the trip's members can see it, and people can join only with the invite code the admin shares. When you leave or delete a trip, your card payments return to your personal spending; the admin deleting a trip removes it and all its payments from the server.</p>
 
   <h2>Permissions</h2>
   <ul>
     <li><strong>Notification access (Android):</strong> to capture bank messages automatically. Optional; you can turn it off at any time in your phone's settings.</li>
+    <li><strong>SMS, READ_SMS (Android):</strong> only to import bank messages from the last 60 days, as described above. Optional and requested only when you choose the import; you can decline it and keep using paste, or remove it at any time in the app's settings on your phone. Qasd never uses it to send or receive messages.</li>
     <li><strong>Notifications:</strong> for the daily summary and budget alerts, which are created on your device.</li>
     <li><strong>Fingerprint or Face ID:</strong> to lock the app. Your phone's system checks it; the app never receives your biometric data.</li>
     <li><strong>Clipboard:</strong> read only when you tap the paste button.</li>
   </ul>
 
   <h2>Controlling and deleting your data</h2>
-  <p>You can delete all your data at any time from Settings → Delete all data. This erases the database, the queue of waiting messages and their encryption keys. Uninstalling the app also deletes all of its data. Because we keep no copy of your data, we cannot recover it after it is deleted.</p>
+  <p>You can delete all your data at any time from Settings → Delete all data. This erases the database, the queue of waiting messages and their encryption keys, the list of tracked banks, the capture activity log, and your phone's anonymous trip token. To remove a shared trip from the server, delete it from inside the trip first if you are its admin. Uninstalling the app also deletes all of its data. Because we keep no copy of your data, we cannot recover it after it is deleted.</p>
 
   <h2>Children</h2>
   <p>Qasd is not directed at children under 13.</p>
